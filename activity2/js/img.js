@@ -1,9 +1,9 @@
 
-const myimage = (img1) => {
+const myimage = (myimg) => {
     let div = document.createElement("div")
     div.className="pic"
-    div.innerHTML = `<div class = "img1">
-    <img src ="./images/${img1}"></img></div>`
+    div.innerHTML = `<div class = "pro">
+    <img src ="./images/${myimg}"></img></div>`
 
 
     return div

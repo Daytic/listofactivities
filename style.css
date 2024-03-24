@@ -1,55 +1,96 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-body{
-        background: linear-gradient(to right, rgb(4, 33, 58), rgb(5, 17, 29));
-        overflow: hidden;
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.cc{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    overflow: hidden;
-    margin-left: 2rem;
-    
+body {
+   background: linear-gradient(to right, rgb(4, 33, 58), rgb(5, 17, 29));
+   overflow: hidden;
 }
-li{
+
+.cc {
+   height: 80px;
+   display: flex;
+   align-items: center;
+   list-style: none;
+   margin-left: 2rem;
+}
+
+li {
    color: white;
-   font-size: 1rem;
-   padding-left: 2rem;
+   font-size: 2rem;
+   padding-left: 3rem;
 }
-a{
+
+a {
    text-decoration: none;
    color: white;
 }
+a:hover {
+   color: goldenrod;
+}
 
-.ii{
+.profile-pic {
+   margin: auto;
+   margin-top: 5rem;
+   width: 300px;
+   height: 300px;
+   background-color: rgb(163, 148, 9);
+   border-radius: 50%;
+}
+
+.ii {
    text-align: center;
    color: rgb(0, 0, 0);
    height: 95vh;
    padding: 3rem calc((100vw - 1300px)) /2;
    overflow-y: auto;
-   margin-top: 20rem;
+   margin-top: 5rem;
 }
 
-h4{
+h4 {
    color: rgb(242, 255, 242);
    text-align: center;
    font-size: 1rem;
 }
 
-h1{
-    color: rgb(206, 203, 203);
-    text-align: center;
-    font-size: 4rem;
+h1 {
+   color: rgb(206, 203, 203);
+   text-align: center;
+   font-size: 4rem;
+   overflow: hidden;
+   white-space: nowrap;
 }
 
-p{
+p {
    color: rgb(255, 255, 255);
    text-align: center;
+}
+
+.title{
+   color: white;
+   font-size: 5rem;
+   padding-left: 18%;
+   font-family: monospace;
+   border-right: 10px solid;
+   width: 86%;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: 
+     typing 3s steps(26),
+     cursor .4s step-end infinite alternate;
+ }
+ @keyframes cursor{
+   50% {border-color: transparent}
+ }
+ @keyframes typing{
+   from {width:0}
+ }
+.intro{
+   font-size: 30px;
+}
+span{
+   color:goldenrod;
 }
