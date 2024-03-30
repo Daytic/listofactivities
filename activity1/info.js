@@ -7,6 +7,8 @@ const myFunction = (title1,title,paragraph, paragraph1, button1,button2,button3,
                     <h1>${title}</h1></br>
                     <p>${paragraph1}</p>
                     <p>${paragraph}</p></br>
+                    </div>
+                    <div class = "btn">
                     <button>${button1}</button>
                     <button>${button2}</button>
                     <button>${button3}</button>
@@ -15,4 +17,4 @@ const myFunction = (title1,title,paragraph, paragraph1, button1,button2,button3,
     return div
 }
 
-export {myFunction}
+export {myFunction} 

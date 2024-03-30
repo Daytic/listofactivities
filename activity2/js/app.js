@@ -4,7 +4,7 @@ import { myFunction2 } from "./card.js"
 
 let myObject = {
     title: "Liza Mae C. Daytic",
-    paragraph : "blah blah blah",
+    paragraph : "blah blah blah adadadhaiadyrsfasfl  sfkfsaff usfsfffusaf ifasf sfsiofmsofsf  sfsfn sfjsf sfsf",
     myimg: "gwapa.jpg",
     button1: "Contact me"
 }

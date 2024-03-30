@@ -6,9 +6,9 @@
 }
 
 body {
-   background-color:rgb(34, 34, 34); /* Replace 'greek.jpg' with the URL of your background image */
+   background-color: rgba(0, 0, 0, 2); 
    background-size: 100%; /* Adjust the zoom level as needed */
-   background-size:contain;
+   background-size:cover;
    overflow: hidden;
    background-repeat: no-repeat;
    
@@ -59,14 +59,8 @@ a:hover {
 .profile-pic img{
    border-radius: 50%;
 }
-
-.ii {
-   text-align: center;
-   color: rgb(0, 0, 0);
-   height: 95vh;
-   padding: 3rem calc((100vw - 1300px)) /2;
-   overflow-y: auto;
-   margin-top: 10%;
+.title{
+text-align: center;
 }
 .box{
    border: solid rgb(34, 34, 34);
@@ -81,12 +75,14 @@ a:hover {
    padding: 30px;
    border-width: 2px;
    width: 60%;
+   height: 150px;
    background-color: rgb(255, 255, 255);
    margin: auto;
 }
+
 h4 {
    color: rgb(242, 255, 242);
-   text-align:left;
+   text-align:center;
 }
 
 h1 {
@@ -103,45 +99,53 @@ p {
    text-align: left;
 }
 
+.activities{
+   margin-left: 15%;
+   margin-top: 0%;
 
-.title{
-   color: rgb(0, 0, 0);
-   font-size: 2rem;
-   padding-left: 14%;
-   font-family: monospace;
-   width: 50%;
-   white-space: nowrap;
-   overflow: hidden;
-   animation: 
-     typing 3s steps(26),
-     cursor .4s step-end infinite alternate;
- }
- @keyframes cursor{
-   50% {border-color: transparent}
- }
- @keyframes typing{
-   from {width:0}
- }
-.intro{
-   font-size: 30px;
 }
-span{
-   color:goldenrod;
+.activity:hover{
+   background-color: rgb(247, 247, 247);
+   box-shadow: 0 0 5px 1px rgb(255, 255, 255);
+   color: black;
 }
-
-
+.activity{
+   display:flex;
+   border: solid white;
+   background-color: white;
+   width: 30%;
+   height: 150px;
+   margin-top: 3%;
+   background-color: rgba(34, 34, 34, 0.7); 
+   margin-left: 1%;
+}
+.activities h1{
+   color: goldenrod;
+   margin-left: 8%;
+   margin-top: 12%;
+}
+h1:hover{
+   color: black;
+}
+.activities p {
+   color: white;
+   margin-top: 0%;
+   margin-left: 28%;
+   padding: 3%;
+   text-align: justify;
+   position:absolute;
+}
 /* Responsive adjustments */
 /* For tablets (portrait orientation) */
 @media screen and (max-width: 768px) and (max-width: 1024px){
    body {
-      background-image: url('greek1.jpg'); /* Replace 'greek.jpg' with the URL of your background image */
+      background-color: gray;
       background-size: cover; /* Adjust the zoom level as needed */
       background-position: center;
       overflow: hidden;
       background-repeat: no-repeat;
    
    }
-
    .cc {
       height: 5rem;
       display: flex;
@@ -165,14 +169,14 @@ span{
       margin-left: 5%;
       width: 70px;
       height: 50px;
-      background-color: rgb(163, 148, 9);
       border-radius: 150%;
       justify-content: flex-start;
    }
 
    .ii {
-      margin-top: 30%;
-      padding: 1rem;
+      margin-top: 50%;
+      padding: 5rem;
+      size: 50px;
    }
 
    .title {
@@ -181,3 +185,4 @@ span{
       width: 81%;
    }
 }
+
