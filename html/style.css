@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+ body {
+    background-color: rgb(0, 0, 0);
+    background-size: 100vh; /* Adjust the zoom level as needed */
+    background-size:cover;
+    overflow: visible;
+    background-repeat: no-repeat;
+    
+ }
+#container {
+    min-height: 100vh;
+    margin-top: 5rem;
+    text-align: center;
+}
+#container2 {
+    min-height: 100vh;
+    margin-top: 5rem;
+    text-align: center;
+}
+#container3 {
+    min-height: 100vh;
+    margin-top: 5rem;
+    text-align: center;
+}
+#big-square img{
+    width: 800px;
+    height: 350px;
+    margin-top: 3rem;
+    margin-left: 45%;
+}
+
+
+#big-square {
+    
+    width: 100%;
+    height: 450px;
+    border: 3px solid rgb(228, 228, 228);
+    margin: 20px auto;
+    position: relative;
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#content h1{
+    color: white;
+    text-align: left;
+    margin-left: 10rem;
+    padding: 20px;
+}
+
+#content p {
+    color: white;
+    text-align: left;
+    margin-left: 10rem;
+    padding: 20px;
+}
+
+.project {
+    display: inline-block;
+    padding: 1rem;
+    border-style: double;
+    border-width: .5rem;
+    border-radius: 1rem;
+    border-color: rgba(219, 219, 217, 0.699);
+    background-color:transparent;
+    width: 25rem;
+    height: 20rem;
+    margin-left: 3rem;
+}
+.project img{
+    width: 100%;
+    height: 100%;
+}

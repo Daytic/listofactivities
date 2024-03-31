@@ -1,183 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
-   background-color:rgb(34, 34, 34); /* Replace 'greek.jpg' with the URL of your background image */
-   background-size: 100%; /* Adjust the zoom level as needed */
-   background-size:contain;
-   overflow: hidden;
-   background-repeat: no-repeat;
-   
-
+    background-color: rgb(34, 34, 34);
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
 }
-.bg{
-   margin-top: 8%;
-   background-size: cover;
-   background-position: top center;
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   z-index: -1;
+
+.bg {
+    margin-top: 8%;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .cc {
-   height: 4rem;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   list-style: none;
-   margin-right: 0;
-   background-color: rgb(0, 0, 0);
-  
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-right: 0;
+    background-color: rgb(0, 0, 0);
 }
 
-li {
-   color: white;
-   font-size: 1rem;
-   padding-left: 3rem;
-   padding-right: 1%;
-   margin-top: .5%;
+.cc li {
+    color: white;
+    font-size: 1rem;
+    padding-left: 3rem;
+    padding-right: 1%;
+    margin-top: .5%;
 }
 
 a {
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+    color: white;
 }
+
 a:hover {
-   color: goldenrod;
+    color: goldenrod;
 }
 
 .profile-pic {
-   margin-top: .3%;
-   margin-right: 64%;
-   justify-content: flex-start;
+    margin-top: .3%;
+    margin-right: 66%;
+    justify-content: flex-start;
 }
-.profile-pic img{
-   border-radius: 50%;
+
+.profile-pic img {
+    border-radius: 70%;
 }
 
 .ii {
-   text-align: center;
-   color: rgb(0, 0, 0);
-   height: 95vh;
-   padding: 3rem calc((100vw - 1300px)) /2;
-   overflow-y: auto;
-   margin-top: 10%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px)) /2;
+    overflow-y: auto;
+    margin-top: 10%;
 }
-.box{
-   border: solid rgb(34, 34, 34);
-   padding: 30px;
-   border-width: 2px;
-   width: 60%;
-   background-color: rgb(34, 34, 34);
-   margin: auto;
+
+.box {
+    border: solid rgb(34, 34, 34);
+    padding: 30px;
+    border-width: 2px;
+    width: 60%;
+    background-color: rgb(34, 34, 34);
+    margin: auto;
 }
-.box1{
-   border: solid rgb(255, 255, 255);
-   padding: 30px;
-   border-width: 2px;
-   width: 60%;
-   background-color: rgb(255, 255, 255);
-   margin: auto;
+
+.box1 {
+    border: solid rgb(255, 255, 255);
+    padding: 30px;
+    border-width: 2px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
 }
+
 h4 {
-   color: rgb(242, 255, 242);
-   text-align:left;
+    color: rgb(242, 255, 242);
+    text-align: left;
 }
 
 h1 {
-   color: rgb(0, 0, 0);
-   text-align: center;
-   font-size: 3rem;
-   overflow: hidden;
-   white-space: nowrap;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 p {
-   color: rgb(255, 255, 255);
-   margin-top: 1%;
-   text-align: left;
+    color: rgb(255, 255, 255);
+    margin-top: 1%;
+    text-align: left;
 }
 
-
-.title{
-   color: rgb(0, 0, 0);
-   font-size: 2rem;
-   padding-left: 14%;
-   font-family: monospace;
-   width: 50%;
-   white-space: nowrap;
-   overflow: hidden;
-   animation: 
-     typing 3s steps(26),
-     cursor .4s step-end infinite alternate;
- }
- @keyframes cursor{
-   50% {border-color: transparent}
- }
- @keyframes typing{
-   from {width:0}
- }
-.intro{
-   font-size: 30px;
-}
-span{
-   color:goldenrod;
+.title {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding-left: 14%;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(26), cursor .4s step-end infinite alternate;
 }
 
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.intro {
+    font-size: 30px;
+}
+
+span {
+    color: goldenrod;
+}
 
 /* Responsive adjustments */
 /* For tablets (portrait orientation) */
-@media screen and (max-width: 768px) and (max-width: 1024px){
-   body {
-      background-image: url('greek1.jpg'); /* Replace 'greek.jpg' with the URL of your background image */
-      background-size: cover; /* Adjust the zoom level as needed */
-      background-position: center;
-      overflow: hidden;
-      background-repeat: no-repeat;
-   
-   }
+@media screen and (max-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url('greek1.jpg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
 
-   .cc {
-      height: 5rem;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      list-style: none;
-      margin-right: 3%;
-      margin: 0;
-   }
-   .cc li{
-      color: white;
-      font-size: .8rem;
-      padding-left: 1.5rem;
-      padding: .5rem;
-      margin-right: .5rem;
-   }
+    .cc {
+        height: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        margin-right: 3%;
+        margin: 0;
+    }
 
-   .profile-pic {
-      margin-top: 1%;
-      margin-right: auto;
-      margin-left: 5%;
-      width: 70px;
-      height: 50px;
-      background-color: rgb(163, 148, 9);
-      border-radius: 150%;
-      justify-content: flex-start;
-   }
+    .cc li {
+        color: white;
+        font-size: .8rem;
+        padding-left: 1.5rem;
+        padding: .5rem;
+        margin-right: .5rem;
+    }
 
-   .ii {
-      margin-top: 30%;
-      padding: 1rem;
-   }
+    .profile-pic {
+        margin-top: 1%;
+        margin-right: auto;
+        margin-left: 5%;
+        width: 70px;
+        height: 50px;
+        background-color: rgb(163, 148, 9);
+        border-radius: 150%;
+        justify-content: flex-start;
+    }
 
-   .title {
-      font-size: 1rem;
-      padding-left: 20%;
-      width: 81%;
-   }
+    .ii {
+        margin-top: 30%;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1rem;
+        padding-left: 20%;
+        width: 81%;
+    }
 }

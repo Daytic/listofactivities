@@ -1,59 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
  
  body {
-    background-color: black; /* Replace 'greek.jpg' with the URL of your background image */
+    background-color: rgb(34, 34, 34);
     background-size: 100%; /* Adjust the zoom level as needed */
-    overflow:visible;
+    background-size:cover;
+    overflow: visible;
     background-repeat: no-repeat;
- 
+    
+ }
+ .bg{
+    margin-top: 8%;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
  }
  
  .cc {
-    height: 5rem;
+    height: 4rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    margin-right: 3%;
- }
+    margin-right: 0;
+    background-color: rgb(0, 0, 0);
+}
  
  li {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 3rem;
+    padding-right: 1%;
+    margin-top: .6%;
  }
  
  a {
     text-decoration: none;
     color: white;
- }
- a:hover {
+}
+
+a:hover {
     color: goldenrod;
- }
+}
  
- .profile-pic {
-    margin-top: 2%;
-    margin-right: 55%;
-    width: 70px;
-    height: 70px;
-    background-color: rgb(163, 148, 9);
-    border-radius: 150%;
+.profile-pic {
+    margin-top: .3%;
+    margin-right: 66%;
     justify-content: flex-start;
- }
- 
+    width: 55px;
+    height: 55px;
+}
+.profile-pic img {
+    border-radius: 70%;
+}
+
 
 .container{
-    height: 150vh;
-    width: 85%;
+    height: 100vh;
+    width: 100%;
     margin: auto;
-    background: white;
+    background-color: #3d3839;
+    background-image: linear-gradient(43deg, #3d3839 0%, #bb7418ef 41%, #d38508 69%, #5a5757 100%);
     background-size: 300% 300%;
-    animation: color 10s ease-in-out infinite;
+    animation: color 4s ease-in-out infinite;
     margin-bottom: 5rem;
   }
   @keyframes color{
@@ -68,21 +90,22 @@
     }
   }
 .sectionOne{
-    max-width: 1200px;
-    margin-left: 250px;
+    max-width: 1100px;
+    margin-left: 16rem;
     margin-top: 100px;
     display: flex;    
 }
 .sectionTwo{
     width: auto;
-    margin: 0 auto;
+    margin-top: -1rem;
     display: flex;    
 }
+/* my project */
 .project h1{
-    font-family: monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 4rem;
-    margin-left: 40%;
-    margin-top: 3rem;
+    margin-left: 34%;
+    margin-top: .5rem;
 }
 
 img{
@@ -107,187 +130,241 @@ img{
 }
 .style2{
 
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
+    margin-left: 10%;
     
 }
 
 button{
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    size: 2rem;
-    font-weight: bold;
+    color: rgb(255, 246, 246);
+    font-weight:lighter ;
     padding: 1rem;
+ 
 }
 button:hover{
-    background-color: rgb(109, 123, 151);
-    color: rgb(245, 244, 244);
+    background-color: #ca953f;
+    color: white;
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
 }
 
-.pic{
-  width: 30%;
-  margin-top: 10rem;
-  margin-left: 15rem;
-
+.pic img{
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    margin-top: 10rem;
+    margin-left: 32%;
 }
 
+/* box pic */
 .picsur{
-    padding: 2rem;
-    border-style: solid;
+    padding: 1rem;
+    border-style: double;
+    border-width: .5rem;
     border-radius: 1rem;
-    border-color: rgb(56, 56, 56);
+    border-color: rgba(252, 229, 168, 0.699);
     background-color:transparent;
     width: 25rem;
-    height: 30rem;
-    margin-left: 5rem;
+    height: 15rem;
+    margin-left: 7rem;
 }
 
 .picsur:hover{
-    background-color: rgb(247, 247, 247);
-    box-shadow: 0 0 2px 1px rgb(0, 0, 0);
+    background-color: rgba(54, 53, 49, 0.781);
+    box-shadow: 0 0 2px 1px rgb(24, 21, 21);
 }
 .style2 p{
     margin-top: 2.5rem;
-    margin-bottom: 2rem;
-    text-align: justify;
-}
-.style2 button{
-    width: 10rem;
-    margin-left: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
+/* btn */
+.style2 button{
+    text-align: center;
+    height: 4rem;
+    width: 12rem;
+    margin-left: 3rem;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+.style2 button:hover{
+    text-align: center;
+    font-size: larger;
+    transform: scale(1.2);
+    background-color: #ca953f;
+    color: white;
+}
 
 /* Responsive adjustments */
 /* For tablets (portrait orientation) */
-@media screen and (max-width: 768px) and (max-width: 1024px){
+@media screen and (max-width: 768px) and (max-width: 1024px) {
     body {
-       background-image: url('greek.jpg'); /* Replace 'greek.jpg' with the URL of your background image */
-       background-size: cover; /* Adjust the zoom level as needed */
-       background-position: center;
-       overflow:visible;
-       background-repeat: no-repeat;
-    
+        background-image: url('greek1.jpg');
+        background-position: center;
+        overflow: visible;
+        background-repeat: no-repeat;
     }
- 
+
     .cc {
-       height: 5rem;
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       list-style: none;
-       margin-right: 3%;
-       margin: 0;
+        height: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        margin-right: 3%;
+        margin: 0;
     }
-    .cc li{
-       color: white;
-       font-size: .8rem;
-       padding-left: 1.5rem;
-       padding: .5rem;
-       margin-right: .5rem;
+
+    .cc li {
+        color: white;
+        font-size: .8rem;
+        padding-left: 1.5rem;
+        padding: .4rem;
+        margin-right: .5rem;
     }
- 
+
     .profile-pic {
-       margin-top: 1%;
-       margin-right: auto;
-       margin-left: 5%;
-       width: 70px;
-       height: 50px;
-       background-color: rgb(163, 148, 9);
-       border-radius: 150%;
-       justify-content: flex-start;
-    }
- 
-    .ii {
-       margin-top: 50%;
-       padding: 1rem;
+        margin-top: 1%;
+        margin-right: auto;
+        margin-left: 5%;
+        width: 70px;
+        height: 50px;
+        background-color: rgb(163, 148, 9);
+        border-radius: 150%;
+        justify-content: flex-start;
     }
     .container{
-        height: 150vh;
-        width: 80%;
+        height: 300%;
+        width: 100%;
         margin: auto;
-        background: white;
+        background-image: linear-gradient(43deg, #3d3839 0%, #7b6b30 41%, #925e0d 69%, #5a5757 100%);
+        background-size: 300% 300%;
+        animation: color 3s ease-in-out infinite;
         margin-bottom: 5rem;
-        overflow:auto;
+      }
+      @keyframes color{
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
       }
 
-    .pic{
-        width: 50%;
-        margin-top: 10%;
-        margin-left: 25%;
-      
-      }
-
-    .sectionOne{ 
-        display: block;
-        margin-left: 2%;
-        margin-top: 1%;
+    .sectionOne{
+        max-width: 1100px;
+        margin: 2rem;
+        margin-top: 100px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;   
     }
+    .sectionTwo{
+        width: auto;
+        margin-top: -1rem;
+        display: flex;
+    }
+    .project h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 4rem;
+        margin-left: 10%;
+        margin-top: 15rem;
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;    
+    }
+    
     .style{
-        margin-top: 5%;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-top: 1rem;
     }
     .style h1{
         font-family: monospace;
-        font-size: 2rem;
-        margin-top: 1%;
-        
+        font-size: 3rem;
+        text-align: center;
     }
     .style p{
         font-family: monospace;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
-        text-align: justify;
+        text-align: center;
+    }
+
+    .style2{
+    
+        margin-top: 10%;
+        display: flex;
+        flex-direction:column;
+        margin-left: 1px;  
     }
     button{
         background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        size: 5rem;
-        font-weight: bold;
+        color: rgb(255, 246, 246);
+        font-weight:lighter ;
         padding: 1rem;
+        margin-left: 28%;
+        width: 10rem;   
     }
-    .btn{
-        margin-left: 35%;
+   
+    button:hover{
+        background-color: #ca953f;
+        color: white;
+        box-shadow: 0 0 2px 1px rgb(255, 255, 255);
     }
-/* section  two */
-.sectionTwo{ 
-    display: block;
-    margin-left: 2%;
-    margin-top: 1%;
-}
-.style2{
-    margin-top: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    display: flex;
-    flex-direction: column-reverse;
-}
-.picsur{
-    padding: 1rem;
-    border-style: solid;
-    border-radius: 1rem;
-    border-color: rgb(56, 56, 56);
-    background-color:transparent;
-    width: 20rem;
-    height: 20rem;
     
-}
+    .pic img{
+        border-radius: 50%;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 3rem;
+        margin-left: 8%;
+    }
 
-.picsur:hover{
-    background-color: rgb(247, 247, 247);
-    box-shadow: 0 0 2px 1px rgb(0, 0, 0);
+    .picsur{
+        padding: 1rem;
+        border-style: double;
+        border-width: .5rem;
+        border-radius: 1rem;
+        border-color: rgba(252, 229, 168, 0.699);
+        background-color:transparent;
+        width: 25rem;
+        height: 15rem;
+        margin-left: 1.5rem;
+        margin-bottom: 10rem;
+    }
+    
+    .picsur:hover{
+        background-color: rgba(54, 53, 49, 0.781);
+        box-shadow: 0 0 2px 1px rgb(24, 21, 21);
+    }
+    .style2 p{
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    /* btn */
+    .style2 button{
+        text-align: center;
+        height: 4rem;
+        width: 22rem;
+        margin-left: auto;
+    }
+    .style2 button:hover{
+        text-align: center;
+        font-size: larger;
+        transform: scale(1.2);
+        background-color: #ca953f;
+        color: white;
+    }
 }
-.style2 p{
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
-    text-align: justify;
-}
-.style2 button{
-    width: 10rem;
-    margin-left: 4rem;
-}
-
- }
- 
