@@ -30,6 +30,12 @@
     margin-top: 5rem;
     text-align: center;
 }
+#big-square video{
+    width: 800px;
+    height: 350px;
+    margin-top: 3rem;
+    margin-left: 45%;
+}
 #big-square img{
     width: 800px;
     height: 350px;
@@ -66,7 +72,9 @@
     color: white;
     text-align: left;
     margin-left: 10rem;
+    margin-right: 60rem;
     padding: 20px;
+    text-align: justify;
 }
 
 .project {
