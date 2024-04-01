@@ -6,15 +6,31 @@
     font-weight: 500;
     font-style: normal;
 }
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	height: 100vh;
+    width: 100%;
+}
  
  body {
-    background-color: rgb(0, 0, 0);
-    background-size: 100vh; /* Adjust the zoom level as needed */
-    background-size:cover;
-    overflow: visible;
+    background-color: rgb(34, 34, 34);
+    background-size: 100%;
+    overflow: hidden;
     background-repeat: no-repeat;
     
  }
+ .bg {
+    margin-top: 8%;
+    background-size:cover;
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+    width: 100%;
+}
+
+
 #container {
     min-height: 100vh;
     margin-top: 5rem;
@@ -66,15 +82,17 @@
     text-align: left;
     margin-left: 10rem;
     padding: 20px;
+    font-size: 3rem;
 }
 
 #content p {
     color: white;
     text-align: left;
     margin-left: 10rem;
-    margin-right: 60rem;
+    margin-right: 50%;
     padding: 20px;
     text-align: justify;
+    font-size: 2rem;
 }
 
 .project {
@@ -85,11 +103,110 @@
     border-radius: 1rem;
     border-color: rgba(219, 219, 217, 0.699);
     background-color:transparent;
-    width: 25rem;
-    height: 20rem;
+    width: 40rem;
+    height: 30rem;
     margin-left: 3rem;
+    margin-top: 2%;
 }
+
 .project img{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 768px) and (max-width: 1024px) {
+    body {
+        background-position: center;
+        overflow: scroll;
+        background-repeat: no-repeat;
+    }
+    .bg {
+        margin-top: 60%;
+        background-size:cover;
+        background-position: center;
+        z-index: -1;
+        width: 100%;     
+    }
+    #container {
+        min-height: 100%;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    #container2 {
+        min-height: 100vh;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    #container3 {
+        min-height: 100vh;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    #big-square video{
+        width: 200px;
+        height: 350px;
+        margin-top: 3rem;
+        margin-left: 45%;
+    }
+    #big-square img{
+        width: 200px;
+        height: 350px;
+        margin-top: 5rem;
+        margin-left: 45%;
+    }
+    
+    
+    #big-square {
+        
+        width: 100%;
+        height: 450px;
+        border: 3px solid rgb(228, 228, 228);
+        margin: 20px auto;
+        position: relative;
+    }
+    
+    #content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    
+    #content h1{
+        color: white;
+        text-align: left;
+        margin-left: 5rem;
+        font-size: 2rem;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    
+    #content p {
+        color: white;
+        text-align: left;
+        margin-left: 1rem;
+        margin-right: 50%;
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+    
+    .project {
+        display: inline-block;
+        padding: 1rem;
+        border-style: double;
+        border-width: .5rem;
+        border-radius: 1rem;
+        border-color: rgba(219, 219, 217, 0.699);
+        background-color:transparent;
+        width: 40rem;
+        height: 30rem;
+        margin-left: 1rem;
+        margin-top: 2%;
+    }
+    
+    .project img{
+        width: 100%;
+        height: 100%;
+    }
 }

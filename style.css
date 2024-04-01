@@ -9,26 +9,32 @@
     font-weight: 500;
     font-style: normal;
 }
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	height: 100vh;
+    width: 100%;
+}
 
 body {
     background-color: rgb(34, 34, 34);
-    background-size: contain;
+    background-size: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
 }
 
 .bg {
     margin-top: 8%;
-    background-size: cover;
-    background-position: top center;
+    background-size:cover;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    background-position: center;
     z-index: -1;
+    width: 100%;
 }
 
 .cc {
-    height: 4rem;
+    height: 6rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -39,7 +45,7 @@ body {
 
 .cc li {
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
     padding-left: 3rem;
     padding-right: 1%;
     margin-top: .5%;
@@ -108,6 +114,7 @@ p {
     color: rgb(255, 255, 255);
     margin-top: 1%;
     text-align: left;
+    font-size: 2rem;
 }
 
 .title {
@@ -142,15 +149,20 @@ span {
 /* For tablets (portrait orientation) */
 @media screen and (max-width: 768px) and (max-width: 1024px) {
     body {
-        background-image: url('greek1.jpg');
-        background-size: cover;
         background-position: center;
         overflow: hidden;
         background-repeat: no-repeat;
     }
+    .bg {
+        margin-top: 60%;
+        background-size:cover;
+        background-position: center;
+        z-index: -1;
+        width: 100%;     
+    }
 
     .cc {
-        height: 5rem;
+        height: 6rem;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -158,34 +170,56 @@ span {
         margin-right: 3%;
         margin: 0;
     }
-
     .cc li {
         color: white;
-        font-size: .8rem;
-        padding-left: 1.5rem;
-        padding: .5rem;
-        margin-right: .5rem;
+        font-size: 1.5rem;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: .5%;
     }
 
     .profile-pic {
-        margin-top: 1%;
+        margin-top: .0%;
         margin-right: auto;
         margin-left: 5%;
         width: 70px;
         height: 50px;
-        background-color: rgb(163, 148, 9);
         border-radius: 150%;
         justify-content: flex-start;
     }
-
     .ii {
         margin-top: 30%;
         padding: 1rem;
     }
 
-    .title {
-        font-size: 1rem;
-        padding-left: 20%;
-        width: 81%;
+    .box1 {
+        border: solid rgb(255, 255, 255);
+        padding: 30px;
+        border-width: 2px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+    }
+    .box {
+        border: solid rgb(34, 34, 34);
+        padding: 30px;
+        border-width: 2px;
+        width: 100%;
+        background-color: rgb(34, 34, 34);
+        margin: auto;
+    }
+    h4 {
+        color: rgb(242, 255, 242);
+    }
+    
+    h1 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    p{
+        font-size: 1.5rem;
     }
 }
