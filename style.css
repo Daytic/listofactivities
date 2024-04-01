@@ -76,7 +76,12 @@ a:hover {
     height: 95vh;
     padding: 3rem calc((100vw - 1300px)) /2;
     overflow-y: auto;
-    margin-top: 10%;
+    margin-top: 30%;
+    
+}
+.ii:hover{
+    transform: matrix(2);
+    color: gray;
 }
 
 .box {
@@ -189,7 +194,7 @@ span {
     }
     .ii {
         margin-top: 30%;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .box1 {
