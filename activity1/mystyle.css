@@ -123,7 +123,7 @@ button{
         background-image: url('greek1.jpg');
         background-size: cover;
         background-position: center;
-        overflow: hidden;
+        overflow: scroll;
         background-repeat: no-repeat;
     }
     .bg {
